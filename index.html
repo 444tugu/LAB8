@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solver web</title>
+</head>
+<body>
+    <h1>LAB 8</h1>
+    
+    <h2>Гараас өгсөн тооны цифрүүдийн нийлбэр нь палиндром мөн эсэхийг шалгах</h2>
+    <input type="number" id="numberInput" placeholder="Тоогоо оруулна уу">
+    <button onclick="checkPalindrome()">Шалгах</button>
+    <p id="result"></p>
+    
+    <h2>Чоно туулайг гүйцэх хугацааг тооцоолох</h2>
+    <label for="distanceInput">Туулай болон чоны хоорондох зайг оруулна уу (км):</label>
+    <input type="number" id="distanceInput" placeholder="Зай км-ээр" min="0">
+    <button onclick="calculateTime()">Тооцоолох</button>
+    <p id="timeResult"></p>
+
+    <h2>Гараас өгсөн тоогоор байршлыг тодорхойлох</h2>
+    <label for="apartmentNumber">Тоотыг оруулна уу:</label>
+    <input type="number" id="apartmentNumber" placeholder="Жишээ нь: 45" min="1" max="108">
+    <button onclick="findLocation()">Байршлыг олох</button>
+    <p id="locationResult"></p>
+
+    <h2>Array дахь 5 тооны хамгийн бага ерөнхий хуваагдагчийг олох:</h2>
+    <label for="numberArray">Тоо оруулах (таслалаар тусгаарлан бичнэ үү):</label>
+    <input type="text" id="numberArray" placeholder="Жишээ: 15, 20, 30, 12, 18">
+    <button onclick="findLCM()">ХБЕХ-г олох</button>
+    <p id="lcmResult"></p>
+
+    <h2>Гараас өгсөн тооны өглөө ба оройн үйлдэл</h2>
+    <label for="inputNumber">Тоогоо оруулна уу:</label>
+    <input type="number" id="inputNumber" placeholder="Жишээ: 16">
+    <button onclick="performAction()">Үйлдлийг гүйцэтгэх</button>
+    <p id="actionresult"></p>
+
+    <script src="palindrome.js"></script>
+    <script src="calculateTime.js"></script>
+    <script src="findLocation.js"></script>
+    <script src="findLCM.js"></script>
+    <script src="action.js"></script>
+
+</body>
+</html>
